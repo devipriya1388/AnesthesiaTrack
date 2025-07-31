@@ -37,11 +37,19 @@ Anesthesia Track
 ---
  Folder Structure
 
-anesthesia-track/ │ ├── static/ │   └── favicon.ico             # App icon │ ├── templates/ │   ├── login.html              # Login UI │   ├── form.html               # Patient registration form │   ├── view.html               # Patient records viewer │   ├── success.html            # Submission success confirmation │ ├── app.py*                     # Backend server (Flask app assumed) ├── README.md                   # Project overview └── requirements.txt*           # Python dependencies
+anesthesia-track/
+├── app.py                        # Main Flask application file
+├── database.db                   # SQLite database file
 
----
+├── static/                       # Folder for static files (CSS, images, JS)
+│   └── style.css                 # Custom stylesheet
 
- How to Use (Assuming Flask)
+├── templates/                    # HTML templates rendered by Flask
+│   ├── login.html                # Login page
+│   ├── patient_form.html         # Patient registration form
+│   ├── view_patients.html        # View submitted patient records
+│   ├── doctor_notes.html         # Section to add/view doctor notes
+│   └── result.html               # Success/result confirmation page How to Use (Assuming Flask)
 
 1. Clone this repository:
    ```bash
