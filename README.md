@@ -9,26 +9,26 @@ Here's a detailed README.md file for your Anesthesia Track web application proje
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔐 *Login Authentication Page*  
+-  *Login Authentication Page*  
   Secure user login interface with smooth UI using Tailwind CSS.
 
-- 📋 *Patient Registration Form*  
+-  *Patient Registration Form*  
   Collects essential details such as demographics, procedure type, vitals, and allergies.
 
-- 🧾 *Patient Records Viewer*  
+-  *Patient Records Viewer*  
   View stored patient data in a clean card layout with vital signs and notes.
 
-- 🗒 *Notes Interface*  
+-  *Notes Interface*  
   Add/view post-op and anesthesia-related notes per patient (integration ready).
 
-- ✅ *Success Page*  
+-  *Success Page*  
   Confirmation screen upon successful data submission with intuitive UI.
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Technology      | Purpose                                 |
 |------------------|-------------------------------------------|
@@ -41,13 +41,13 @@ Here's a detailed README.md file for your Anesthesia Track web application proje
 
 ---
 
-## 📂 Folder Structure
+##  Folder Structure
 
 anesthesia-track/ │ ├── static/ │   └── favicon.ico             # App icon │ ├── templates/ │   ├── login.html              # Login UI │   ├── form.html               # Patient registration form │   ├── view.html               # Patient records viewer │   ├── success.html            # Submission success confirmation │ ├── app.py*                     # Backend server (Flask app assumed) ├── README.md                   # Project overview └── requirements.txt*           # Python dependencies
 
 ---
 
-## 📌 How to Use (Assuming Flask)
+##  How to Use (Assuming Flask)
 
 1. Clone this repository:
    ```bash
@@ -73,7 +73,7 @@ http://127.0.0.1:5000/
 
 ---
 
-✅ Advantages
+ Advantages
 
 Clean, responsive UI (mobile-friendly)
 
@@ -87,7 +87,7 @@ Tailored for anesthesiology procedures and post-op tracking
 
 ---
 
-📌 Future Enhancements
+ Future Enhancements
 
 Database integration (e.g., SQLite/PostgreSQL)
 
@@ -103,7 +103,7 @@ Dark mode toggle
 
 ---
 
-📄 License
+ License
 
 This project is open-source and available under the MIT License.
 
