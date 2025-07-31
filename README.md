@@ -1,117 +1,96 @@
 Anesthesia Track
 
-Anesthesia Record Management Web Application
-
-Anesthesia Track is a web application built to support healthcare professionals in efficiently managing anesthesia-related patient records. It streamlines the documentation of patient data, procedure notes, vitals, and post-operative care tracking.
-
+*Anesthesia Track* is a streamlined web application designed to help healthcare professionals manage and track anesthesia-related patient records. It simplifies the recording, retrieval, and management of vital patient data, procedure details, and notes in a modern and user-friendly interface.
 
 ---
 
- Key Features
+ Features
 
- User Interface & Authentication
+ *Login Authentication Page*  
+  Secure user login interface with smooth UI using Tailwind CSS.
 
-Secure Login: Simple and responsive login page using Tailwind CSS and Flask.
+ *Patient Registration Form*  
+  Collects essential details such as demographics, procedure type, vitals, and allergies.
 
-Patient Registration: Structured form for demographic details, procedure type, vitals, allergies, etc.
+-  *Patient Records Viewer*  
+  View stored patient data in a clean card layout with vital signs and notes.
 
-Patient Records Viewer: View stored data in card layout format.
+-  *Notes Interface*  
+  Add/view post-op and anesthesia-related notes per patient (integration ready).
 
-Doctor Notes Section: Authorized users can add anesthesia and post-op notes.
-
-Submission Confirmation: A success screen after completing data entry.
-
-
-
----
-
- Tech Stack
-
-Technology	Purpose
-
-HTML5 + CSS3	Page structure and styling
-Tailwind CSS	Responsive design framework
-Flask	Backend routing and templating
-Python	Server-side programming
-
-
-> Note: Flask and Python are inferred based on the use of Jinja templates.
-
-
-
+-  *Success Page*  
+  Confirmation screen upon successful data submission with intuitive UI.
 
 ---
 
+ 🛠 Tech Stack
+
+| Technology      | Purpose                                 |
+|------------------|-------------------------------------------|
+| HTML5 + CSS3     | Base structure and styling               |
+| Tailwind CSS     | Utility-first modern styling framework   |
+| Flask (backend)* | To handle routing and database (assumed) |
+| Python*          | Backend server language (if used)        |
+
+> 🔹 *Flask & Python are assumed for server logic due to Jinja templating ({{ url_for(...) }}) usage.
+
+---
  Folder Structure
 
-anesthesia-track/
-├── static/
-│   └── favicon.ico               # App icon
-├── templates/
-│   ├── login.html                # Login interface
-│   ├── form.html                 # Patient registration
-│   ├── view.html                 # Data display page
-│   └── success.html              # Submission confirmation
-├── app.py                        # Main Flask script
-├── README.md                     # Project documentation
-└── requirements.txt              # Dependency file
-
+anesthesia-track/ │ ├── static/ │   └── favicon.ico             # App icon │ ├── templates/ │   ├── login.html              # Login UI │   ├── form.html               # Patient registration form │   ├── view.html               # Patient records viewer │   ├── success.html            # Submission success confirmation │ ├── app.py*                     # Backend server (Flask app assumed) ├── README.md                   # Project overview └── requirements.txt*           # Python dependencies
 
 ---
 
- Getting Started
+ How to Use (Assuming Flask)
 
- Prerequisites
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/anesthesia-track.git
+   cd anesthesia-track
 
-Python 3.x installed
-
-Git version control system
-
-
- Installation Steps
-
-git clone https://github.com/your-username/anesthesia-track.git
-cd anesthesia-track
-
-Install the required packages:
+2. Install dependencies:
 
 pip install flask
 
-Start the server:
+
+3. Run the Flask server:
 
 python app.py
 
-Open your browser at:
+
+4. Open the app in your browser:
+
 http://127.0.0.1:5000/
 
 
----
 
+
+---
  Advantages
 
-Clean UI: Tailored to healthcare workflows with responsive layouts.
+Clean, responsive UI (mobile-friendly)
 
-Modular & Extensible: Codebase allows easy feature upgrades.
+Easy integration into any hospital/clinic system
 
-Anesthesia-Specific: Tracks vital patient data relevant to anesthesia.
+Modular HTML pages for extensibility
 
-Cross-device Compatibility: Works on desktop, tablet, and mobile browsers.
+Tailored for anesthesiology procedures and post-op tracking
 
 
 
 ---
 
- Planned Enhancements
+ Future Enhancements
 
-Database Support: SQLite/PostgreSQL for persistent storage.
+Database integration (e.g., SQLite/PostgreSQL)
 
-Role-Based Access: Doctor, Nurse, Admin permissions.
+Role-based user management
 
-PDF Report Export: Generate downloadable summaries.
+Export patient reports to PDF
 
-Vitals Charting: Show trends over time.
+Graphs for vitals over time
 
-Dark Mode: For clinical comfort in low-light settings.
+Dark mode toggle
 
 
 
@@ -119,4 +98,5 @@ Dark Mode: For clinical comfort in low-light settings.
 
  License
 
-This project is licensed under the MIT license
+This project is open-source and available under the MIT License.
+
